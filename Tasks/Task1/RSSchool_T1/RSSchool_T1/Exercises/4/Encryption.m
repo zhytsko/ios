@@ -21,7 +21,6 @@
             [result appendString:@" "];
         }
     }
-    
     return result;
 }
 
