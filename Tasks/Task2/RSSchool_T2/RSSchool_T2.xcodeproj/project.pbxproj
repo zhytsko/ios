@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EBC3F562250FE2900F62727 /* AssimilationInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC3F552250FE2900F62727 /* AssimilationInformation.m */; };
 		E38F8D97224A3CDE009EF306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F8D96224A3CDE009EF306 /* AppDelegate.m */; };
 		E38F8D9A224A3CDE009EF306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38F8D99224A3CDE009EF306 /* ViewController.m */; };
 		E38F8D9F224A3CE0009EF306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38F8D9E224A3CE0009EF306 /* Assets.xcassets */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0206C32250FB60003D2714 /* AssimilationInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssimilationInformation.h; sourceTree = "<group>"; };
+		2EBC3F552250FE2900F62727 /* AssimilationInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssimilationInformation.m; sourceTree = "<group>"; };
 		E38F8D92224A3CDE009EF306 /* RSSchool_T2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38F8D95224A3CDE009EF306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E38F8D96224A3CDE009EF306 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				E38F8DD0224A8AEA009EF306 /* DoomsdayMachine.h */,
+				2EBC3F552250FE2900F62727 /* AssimilationInformation.m */,
+				2E0206C32250FB60003D2714 /* AssimilationInformation.h */,
 				E38F8DD1224A8AEA009EF306 /* DoomsdayMachine.m */,
 			);
 			path = 3;
@@ -292,6 +297,7 @@
 				E38F8DD2224A8AEA009EF306 /* DoomsdayMachine.m in Sources */,
 				E38F8DDA224BA508009EF306 /* MatrixHacker.m in Sources */,
 				E38F8DE1224D0B8F009EF306 /* TinyURL.m in Sources */,
+				2EBC3F562250FE2900F62727 /* AssimilationInformation.m in Sources */,
 				E38F8DA5224A3CE0009EF306 /* main.m in Sources */,
 				E38F8DBB224A3EF0009EF306 /* KidnapperNote.m in Sources */,
 				E38F8D97224A3CDE009EF306 /* AppDelegate.m in Sources */,
@@ -455,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/RSSchool_T2/Irrelevant/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/RSSchool_T2/Irrelevant/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
