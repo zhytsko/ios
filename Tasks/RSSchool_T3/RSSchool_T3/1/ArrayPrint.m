@@ -45,8 +45,8 @@ NSString *objToString(id object) {
     NSMutableString *result = [[NSMutableString alloc] init];
     [result appendString:@"["];
     NSArray *array = self;
-    for (int i = 0; i < [array count]; i++) {
-        [result appendString: objToString(array[i])];
+    for (id obj in array) {
+        [result appendString: objToString(obj)];
     }
     [result appendString:@"]"];
     [result replaceOccurrencesOfString:@",]" withString:@"]" options:0 range: NSMakeRange(0, [result length])];
