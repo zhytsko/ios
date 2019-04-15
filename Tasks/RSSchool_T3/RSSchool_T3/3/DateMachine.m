@@ -38,10 +38,6 @@
     }
 }
 
-- (IBAction)editingChangedStartDate:(id)sender {
-    _currentDateLabel.text = _startDateTextField.text;
-}
-
 - (IBAction)editingChangedDateUnit:(id)sender {
     NSString *pattern = @"[a-z]";
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:NULL];
@@ -49,10 +45,27 @@
         _dateUnitTextField.text = @"Date unit";
     }
 }
+
+- (IBAction)editingChangedStartDate:(id)sender {
+    _currentDateLabel.text = _startDateTextField.text;
+}
+
+- (IBAction)editingDidEndStep:(id)sender {
+    if ([_stepTextField.text isEqualToString:@""]) {
+        _stepTextField.text = @"Step";
+    }
+}
+
 - (IBAction)editingDidEndDateUnit:(id)sender {
     NSArray *array = @[@"year", @"month", @"week", @"day", @"hour", @"minute"];
     if (![array containsObject: _dateUnitTextField.text]) {
         _dateUnitTextField.text = @"Date unit";
+    }
+}
+
+- (IBAction)edititngDidEndDateUnit:(id)sender {
+    if ([_startDateTextField.text isEqualToString:@""]) {
+        _startDateTextField.text = @"Start date";
     }
 }
 

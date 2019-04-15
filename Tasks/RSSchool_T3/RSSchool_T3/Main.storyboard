@@ -19,17 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="Step" borderStyle="roundedRect" placeholder="Step" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xf0-Zf-2dG">
-                                <rect key="frame" x="28" y="123" width="97" height="30"/>
+                                <rect key="frame" x="79" y="223" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="editingChangedStep:" destination="IrF-OK-nIT" eventType="editingChanged" id="UvY-UW-ebj"/>
+                                    <action selector="editingDidEndStep:" destination="IrF-OK-nIT" eventType="editingDidEnd" id="7Zb-zG-PlN"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="Date unit" borderStyle="roundedRect" placeholder="Date unit" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSo-Ar-Kpr">
-                                <rect key="frame" x="28" y="168" width="97" height="30"/>
+                                <rect key="frame" x="79" y="288" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -39,36 +40,43 @@
                                     <action selector="editingDidEndDateUnit:" destination="IrF-OK-nIT" eventType="editingDidEnd" id="Uaa-bw-dc9"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="Start date" borderStyle="roundedRect" placeholder="Start date" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="go3-zJ-BL5">
-                                <rect key="frame" x="28" y="212" width="97" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" text="Start date" borderStyle="roundedRect" placeholder="Start date" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="go3-zJ-BL5">
+                                <rect key="frame" x="79" y="353" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="editingChangedStartDate:" destination="IrF-OK-nIT" eventType="editingChanged" id="LM0-9v-3Z2"/>
+                                    <action selector="edititngDidEndDateUnit:" destination="IrF-OK-nIT" eventType="editingDidEnd" id="TcS-HE-vU2"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGS-ky-XGV">
-                                <rect key="frame" x="61" y="258" width="30" height="30"/>
+                                <rect key="frame" x="79" y="415" width="53" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addStep:" destination="IrF-OK-nIT" eventType="touchUpInside" id="std-ux-Lf3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zb-OZ-FFq">
-                                <rect key="frame" x="61" y="296" width="30" height="30"/>
+                                <rect key="frame" x="284" y="415" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sub"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Sub">
+                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="subStep:" destination="IrF-OK-nIT" eventType="touchUpInside" id="vpE-cy-OpE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20/04/2004 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRR-3K-e3y">
-                                <rect key="frame" x="137" y="355" width="140" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30/12/2004 22:22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRR-3K-e3y">
+                                <rect key="frame" x="79" y="488" width="257" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -87,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfa-5I-GrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="25.565217391304351"/>
+            <point key="canvasLocation" x="47.826086956521742" y="25.271739130434785"/>
         </scene>
     </scenes>
 </document>
