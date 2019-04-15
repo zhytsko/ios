@@ -17,6 +17,7 @@ NSMutableArray *makeBracketSequences(int count){
         }
     } copy];
     myBlock((count - 1) / 2, 0, 0, @"");
+    [myBlock release];
     [bracketSequences autorelease];
     return bracketSequences;
 }
