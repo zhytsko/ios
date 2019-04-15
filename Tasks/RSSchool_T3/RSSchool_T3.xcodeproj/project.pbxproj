@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0CB0EA2264B76E00AA1AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0CB0E92264B76E00AA1AEF /* Main.storyboard */; };
 		E3821557225B533B00E3B12B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3821556225B533B00E3B12B /* AppDelegate.m */; };
 		E382155F225B533E00E3B12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E382155E225B533E00E3B12B /* Assets.xcassets */; };
 		E3821562225B533E00E3B12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3821560225B533E00E3B12B /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0CB0E92264B76E00AA1AEF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E3821552225B533B00E3B12B /* RSSchool_T3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3821555225B533B00E3B12B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3821556225B533B00E3B12B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				E39C2578225CAA8500C3BCC1 /* 3 */,
 				E3821555225B533B00E3B12B /* AppDelegate.h */,
 				E3821556225B533B00E3B12B /* AppDelegate.m */,
+				2E0CB0E92264B76E00AA1AEF /* Main.storyboard */,
 				E382155E225B533E00E3B12B /* Assets.xcassets */,
 				E3821560225B533E00E3B12B /* LaunchScreen.storyboard */,
 				E3821563225B533E00E3B12B /* Info.plist */,
@@ -231,6 +234,9 @@
 		E382154A225B533B00E3B12B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Alexander Shalamov";
 				TargetAttributes = {
@@ -275,6 +281,7 @@
 				E3821562225B533E00E3B12B /* LaunchScreen.storyboard in Resources */,
 				E382155F225B533E00E3B12B /* Assets.xcassets in Resources */,
 				E39C2567225B877F00C3BCC1 /* ExampleTrees.png in Resources */,
+				2E0CB0EA2264B76E00AA1AEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

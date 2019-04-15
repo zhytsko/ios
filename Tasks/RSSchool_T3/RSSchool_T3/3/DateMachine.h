@@ -35,5 +35,12 @@
  09/04/2019 00:00
 */
 @interface DateMachine : UIViewController
+@property (retain, nonatomic) IBOutlet UITextField *stepTextField;
+@property (retain, nonatomic) IBOutlet UITextField *dateUnitTextField;
+@property (retain, nonatomic) IBOutlet UITextField *startDateTextField;
+@property (retain, nonatomic) IBOutlet UIButton *addButton;
+@property (retain, nonatomic) IBOutlet UIButton *subButton;
+@property (retain, nonatomic) IBOutlet UILabel *currentDateLabel;
+@property (retain, nonatomic) NSDateFormatter *dateFormatter;
 
 @end
